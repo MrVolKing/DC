@@ -1,0 +1,15 @@
+.sect5{
+    background-image: url(../images/sect5.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #f8f8f8;
+
+    &__content{
+        padding-top: rem(143);
+        display: flex;
+    }
+
+    &__right{
+        flex: 1;
+    }
+}

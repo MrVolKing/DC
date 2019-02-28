@@ -1,0 +1,24 @@
+.sect4{
+    background-image: url(../images/sect4.png);
+    background-color: rgb(238, 238, 238);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &__content{
+        padding-top: rem(173);
+        display: flex;
+    }
+
+    &__right{
+        flex: 1;
+    }
+
+    .blockslider{
+        flex-direction: row-reverse;
+
+        &__button{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}

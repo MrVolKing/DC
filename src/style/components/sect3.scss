@@ -1,0 +1,14 @@
+.sect3{
+    background-image: url(../images/sect3.png); 
+    background-color: $white;
+    background-size: cover;
+
+    &__content{
+        padding-top: rem(131);
+        display: flex;
+    }
+
+    &__right{
+        flex: 1;
+    }
+}

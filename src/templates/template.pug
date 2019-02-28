@@ -1,0 +1,70 @@
+block varibles
+
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        title #{title}
+        meta(content="" name="description")
+        meta(content="" name="keywords")
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        meta(content="ie-edge" http-equiv="x-ua-compatible")
+        link(rel="stylesheet", href="./styles/app.min.css?1")
+        
+         
+        
+    
+    body
+        block content
+        script(src="./dist/js/jquery-3.2.1.min.js?1")
+        script(src="./dist/js/swiper.min.js?1")
+
+        script(src='./dist/js/scrolloverflow.min.js?1')
+        script(src='./dist/js/fullpage.js?1')
+        
+        script(src='./scripts/app.js?1')
+
+        script.
+
+            $(document).ready(function() {
+                if ($(document).width() > 1350) {
+                    new fullpage('#fullpage', {
+                        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+                        scrollOverflow: true,
+                        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'eighthpage'],
+                        navigationTooltips: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'eighthpage'],
+                    });
+                };
+
+                $('#footer__arrow').on('click', () => {
+                    fullpage_api.moveSectionDown();
+                });
+                $('#firstPage').on('click', () => {
+                    fullpage_api.moveTo(1);
+                });
+                $('#secondPage').on('click', () => {
+                    fullpage_api.moveTo(2);
+                });
+                $('#thirdPage').on('click', () => {
+                    fullpage_api.moveTo(3);
+                });
+                $('#fourthPage').on('click', () => {
+                    fullpage_api.moveTo(4);
+                });
+                $('#fifthPage').on('click', () => {
+                    fullpage_api.moveTo(5);
+                });
+                $('#sixthPage').on('click', () => {
+                    fullpage_api.moveTo(6);
+                });
+                $('#seventhPage').on('click', () => {
+                    fullpage_api.moveTo(7);
+                });
+                $('#eighthpage').on('click', () => {
+                    fullpage_api.moveTo(8);
+                });
+
+
+
+            });
+        

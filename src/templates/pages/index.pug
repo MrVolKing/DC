@@ -1,0 +1,292 @@
+extends ../template
+
+block varibles
+    - var title = "Main"
+
+block content
+   
+    .content
+        include ../common/header.pug
+        #fullpage
+
+            //- a(name="firstPage")
+            section.sect1.section
+                .wrapper
+                    .sect1__content
+                        .sect1__left
+                            .paginpage
+                                a(href="#firstPage").activepage
+                                a(href="#secondPage")
+                                a(href="#thirdPage")
+                                a(href="#fourthPage")
+                                a(href="#fifthPage")
+                                a(href="#sixthPage") 
+                                a(href="#seventhPage")
+                                a(href="#eighthpage") 
+
+                        .sect1__right
+                            .sect1__text
+                                .sect1__title 
+                                    h1 Digital Contact
+                                        span . 
+                                .sect1__subtitle
+                                    span.subtitle Complete marketing automation with power personalized customer experiences at scale. Workflow driven by machine learning technologies.
+                                .sect1__desc
+                                    p ML-driven scheduling, audience segmentation, dynamic one-on-one triggers based on behavior and profile data. Comprehensive campaign management automation. 
+                                
+                                    
+
+                            .sect1__sliderblock
+                                .slider
+                                    .swiper-container-sect1
+                                        .swiper-wrapper
+                                            .swiper-slide(style="background-image: url(./images/slider.png)")
+                                            .swiper-slide(style="background-image: url(./images/slider.png)")
+                                            .swiper-slide(style="background-image: url(./images/slider.png)")
+                                            .swiper-slide(style="background-image: url(./images/slider.png)")
+                                    
+                                .custom_pagin
+                                    .strng
+                                    .swiper-pagination-sect1
+                                        
+                                
+                                    
+                        
+            //- a(name="secondPage")
+            section.sect2.section
+                .wrapper
+                    .sect2__content
+                        .sect2__left
+                            .paginpage
+                                a(href="#firstPage")
+                                a(href="#secondPage").activepage
+                                a(href="#thirdPage")
+                                a(href="#fourthPage")
+                                a(href="#fifthPage")
+                                a(href="#sixthPage") 
+                                a(href="#seventhPage")
+                                a(href="#eighthpage") 
+                        .sect2__right
+                            .sect2__subtitle
+                                span.subtitle Switch to time-savvy process still increase revenue and boost your marketing ROI with highly-relevant one-on-one campaigns.  
+                            .sect2__desc
+                                p Forget about time-consuming personalization techniques. With our platform it is as simple as plug and play!  
+                            .sect2__blockpercent
+                                .blockitem
+                                    .blockitem__number
+                                        p 41
+                                        span %
+                                    .blockitem__text
+                                        span.subtitle Increase <br>in marketing revenue
+                                .blockitem
+                                    .blockitem__number
+                                        .plus
+                                            span +
+                                        p 39
+                                        span %
+                                    .blockitem__text
+                                        span.subtitle Retain and acquire new customers
+
+                                .blockitem
+                                    .blockitem__number
+                                        span x
+                                        p 63
+                                    .blockitem__text
+                                        span.subtitle Marketing ROI
+
+
+
+                            
+
+                            
+            //- a(name="thirdPage")
+            section.sect3.section
+                .wrapper
+                    .sect3__content
+                        .sect3__left
+                            .paginpage
+                                a(href="#firstPage")
+                                a(href="#secondPage")
+                                a(href="#thirdPage").activepage
+                                a(href="#fourthPage")
+                                a(href="#fifthPage")
+                                a(href="#sixthPage") 
+                                a(href="#seventhPage")
+                                a(href="#eighthpage") 
+
+                        .sect3__right
+                            .blockslider
+                                .blockslider__left
+                                    .blockslider__title 
+                                        h2.title AI-Driven Personalization 
+                                        .custom_pagin
+                                            ul.swiper-pagination.swiper-pagination1
+                                        .blockslider__button
+                                            a(href="#").button  Personalize
+
+                                .blockslider__right
+                                    .slider
+                                        .swiper-container.swiper-container1
+                                            .swiper-wrapper
+                                                .swiper-slide(style="background-image: url(./images/slide.png)")
+                                                .swiper-slide(style="background-image: url(./images/slide.png)")
+                                                .swiper-slide(style="background-image: url(./images/slide.png)")
+                                                .swiper-slide(style="background-image: url(./images/slide.png)")
+
+
+
+            //- a(name="fourthPage")              
+            section.sect4.section
+                .wrapper
+                    .sect4__content
+                        .sect4__left
+                            .paginpage
+                                a(href="#firstPage")
+                                a(href="#secondPage")
+                                a(href="#thirdPage")
+                                a(href="#fourthPage").activepage
+                                a(href="#fifthPage")
+                                a(href="#sixthPage") 
+                                a(href="#seventhPage")
+                                a(href="#eighthpage") 
+
+                        .sect4__right
+                            .blockslider
+                                .blockslider__left
+                                    .blockslider__title 
+                                        h2.title Journey Automation
+                                        .custom_pagin
+                                            ul.swiper-pagination.swiper-pagination2
+                                        .blockslider__button
+                                            a(href="#").button  Automate
+
+                                .blockslider__right
+                                    .slider
+                                        .swiper-container.swiper-container2
+                                            .swiper-wrapper
+                                                .swiper-slide(style="background-image: url(./images/slide.png)")
+                                                .swiper-slide(style="background-image: url(./images/slide.png)")
+                                                .swiper-slide(style="background-image: url(./images/slide.png)")
+                                                .swiper-slide(style="background-image: url(./images/slide.png)")
+                            
+                                
+
+                        
+            //- a(name="fifthPage")
+            section.sect5.section
+                .wrapper
+                    .sect5__content
+                        .sect5__left
+                            .paginpage
+                                a(href="#firstPage")
+                                a(href="#secondPage")
+                                a(href="#thirdPage")
+                                a(href="#fourthPage")
+                                a(href="#fifthPage").activepage
+                                a(href="#sixthPage") 
+                                a(href="#seventhPage")
+                                a(href="#eighthpage") 
+
+                        .sect5__right
+                            .blockslider
+                                .blockslider__left
+                                    .blockslider__title 
+                                        h2.title Campaign Management
+                                        .custom_pagin
+                                            ul.swiper-pagination.swiper-pagination3
+                                        .blockslider__button
+                                            a(href="#").button  Send
+
+                                .blockslider__right
+                                    .slider
+                                        .swiper-container.swiper-container3
+                                            .swiper-wrapper
+                                                .swiper-slide(style="background-image: url(./images/slide.png)")
+                                                .swiper-slide(style="background-image: url(./images/slide.png)")
+                                                .swiper-slide(style="background-image: url(./images/slide.png)")
+                                                .swiper-slide(style="background-image: url(./images/slide.png)")
+                    
+
+                        
+                                    
+        
+            //- a(name="sixthPage")#sixthPage
+            section.sect6.section
+                .wrapper
+                    .sect6__content
+                        .sect6__left
+                            .paginpage
+                                a(href="#firstPage")
+                                a(href="#secondPage")
+                                a(href="#thirdPage")
+                                a(href="#fourthPage")
+                                a(href="#fifthPage")
+                                a(href="#sixthPage").activepage
+                                a(href="#seventhPage")
+                                a(href="#eighthpage") 
+
+                        .sect6__right
+                            .blockslider
+                                .blockslider__left
+                                    .blockslider__title 
+                                        h2.title Comprehensive Analytics
+                                        .custom_pagin
+                                            ul.swiper-pagination.swiper-pagination4
+                                        .blockslider__button
+                                            a(href="#").button  Analyze 
+
+                                .blockslider__right
+                                    .slider
+                                        .swiper-container.swiper-container4
+                                            .swiper-wrapper
+                                                .swiper-slide(style="background-image: url(./images/slide.png)")
+                                                .swiper-slide(style="background-image: url(./images/slide.png)")
+                                                .swiper-slide(style="background-image: url(./images/slide.png)")
+                                                //- .swiper-slide(style="background-image: url(./images/slide.png)")
+
+
+
+            section.sect7.section
+                .wrapper
+                    .sect7__content
+                        .sect7__left
+                            .paginpage
+                                a(href="#firstPage")
+                                a(href="#secondPage")
+                                a(href="#thirdPage")
+                                a(href="#fourthPage")
+                                a(href="#fifthPage")
+                                a(href="#sixthPage")
+                                a(href="#seventhPage").activepage
+                                a(href="#eighthpage") 
+
+                        .sect7__right
+                            .sect7__title
+                                h2.title Trusted by:
+                            .sect7__slider
+                                .swiper-button-prev
+                                .swiper-container7
+                                    .swiper-wrapper
+                                            
+                                            .swiper-slide(style="background-image: url(../images/logo1.png);")
+                                                //- img(src="./images/logo1.png", alt="")
+                                            .swiper-slide(style="background-image: url(../images/logo2.png);")
+                                                //- img(src="./images/logo2.png", alt="")
+                                            .swiper-slide(style="background-image: url(../images/logo3.png); background-size: 55%;")
+                                                //- img(src="./images/logo3.png", alt="")
+                                            .swiper-slide(style="background-image: url(../images/logo4.png);")
+                                                //- img(src="./images/logo4.png", alt="")
+                                            .swiper-slide(style="background-image: url(../images/logo.png);")
+                                                //- img(src="./images/logo.png", alt="")
+                                            .swiper-slide(style="background-image: url(../images/logo1.png);")
+                                                //- img(src="./images/logo4.png", alt="")
+                                            .swiper-slide(style="background-image: url(../images/logo2.png);")
+                                                //- img(src="./images/logo1.png", alt="")
+                                
+                                //- .btn_next
+                                .swiper-button-next
+                                
+
+            
+
+            include ../common/footer.pug

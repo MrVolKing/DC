@@ -1,0 +1,66 @@
+.blockslider{
+    display: flex;
+    justify-content: space-between;
+
+    &__left{
+        width: rem(660);
+        .custom_pagin{
+            .swiper-pagination{
+                width: auto;
+                position: static;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                .swiper-pagination-bullet{
+                    width: auto;
+                    height: auto;
+                    border-radius: 0 !important;
+                    background: transparent;
+                    opacity: 1;
+                    display: block;
+                    position: relative;
+                    color: #909ea5;
+                    font-family: montserrat;
+                    font-size: rem(23);
+                    font-weight: 400;
+                    margin-bottom: rem(20);
+                    outline: none;
+                    &.swiper-pagination-bullet-active:before{
+                        content: "";
+                        width: 1px;
+                        height: 100%;
+                        background-color: $brand_color;
+                        position: absolute;
+                        left: rem(-5);
+                    }
+                    // &:hover{
+                        
+                    //         content: "";
+                    //         width: 1px;
+                    //         height: 100%;
+                    //         background-color: #4d7adf;
+                    //         position: absolute;
+                    //         left: rem(-5);
+                        
+                    // }
+                }
+            }
+        }
+        
+    }
+
+    &__right{
+        width: rem(724);
+        padding-top: rem(97);
+
+        .swiper-slide{
+            width: 100%;
+            height: rem(432);
+            
+        }
+    }
+
+    &__button{
+        margin-top: rem(26);
+    }
+}

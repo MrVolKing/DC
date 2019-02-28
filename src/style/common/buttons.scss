@@ -1,0 +1,33 @@
+.button{
+    
+    font-size: rem(17);
+    color: $maintext;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: rem(182);
+    height: rem(54);
+    border: rem(1) solid #2252ee;
+    outline: 0;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $brand_color;
+        border: none;
+        color: $white;
+    }
+
+    &:active{
+        color: $maintext;
+        background: transparent;
+    }
+    
+}
+
+@media screen and (max-width:769px){
+    .button{
+        height: 40px;
+        font-size: 14px;
+    }
+}

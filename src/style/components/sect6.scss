@@ -1,0 +1,26 @@
+.sect6{
+    background-image: url(../images/sect6.png);
+    // background-color: rgb(238, 238, 238);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__content{
+        padding-top: rem(166);
+        display: flex;
+    }
+
+    &__right{
+        flex: 1;
+    }
+
+    .blockslider{
+        flex-direction: row-reverse;
+
+        &__button{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
+// (style="background-image: url(./images/sect6.png); background-color: #f3f3f3;")

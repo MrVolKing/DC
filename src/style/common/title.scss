@@ -1,0 +1,17 @@
+.title{
+    color: $maintext;
+    font-weight: 700;
+    font-size: rem(80);
+    margin-bottom: rem(80);
+    
+    &_white{
+        color: $white;
+    }
+}
+
+@media screen and (max-width:769px){
+    .title{
+        font-size: 30px;
+        margin-bottom: 26px;
+    }
+}

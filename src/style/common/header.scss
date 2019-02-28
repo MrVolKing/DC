@@ -1,0 +1,113 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000000;
+    height: rem(123);
+    box-shadow: 0 rem(4) rem(9) rem(1) rgba(17, 17, 17, 0.13);
+    background-color: rgba(255, 255, 255, .77);
+    display: flex;
+    align-items: center;
+
+    .wrapper{
+        width: rem(1650);
+    }
+
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        padding: rem(20) 0;
+
+        &__left, &__right{
+            display: flex;
+            align-items: center;
+            // width: 50%;
+        }
+
+        &__logo{
+            position: relative;
+            margin-right: rem(143);
+        }
+
+        &__menu{
+            display: flex;
+        }
+
+        &__submenu{
+            position: absolute;
+            opacity: 0;
+        }
+
+        &__menu_item{
+            line-height: rem(48);
+            font-size: rem(20);
+            margin-right: rem(30);
+            a{
+                color: #8a9196;
+                &:hover{
+                    color: $brand_color;
+                }
+            }
+        }
+
+        &__demo{
+            .button{
+                width: rem(160) !important;
+                height: rem(67) !important;
+                box-shadow: 0 0 rem(16) rgba(77, 122, 223, 0.7);
+                border-radius: rem(34);
+                background-color: $brand_color;
+            }
+            span{
+                margin-left: rem(10);
+                font-size: rem(17);
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: rem(3.4);
+                color: $white;
+            }
+        }
+
+        &__burger{
+            border-radius: 50%;
+            border: 1px solid #b7bfc4;
+            width: 49px;
+            height: 49px;
+            margin-left: rem(70);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            display: none;
+        }
+    }
+}
+
+
+@media screen and (max-width:769px){
+    header{
+        .wrapper{
+            width: 100%;
+        }
+        .header{
+            padding: 10px 0;
+            &__logo{
+                margin-right: 0;
+                img{
+                    width: 75px;
+                    height: 70px;
+                }
+            }
+
+            &__menu{
+                display: none;
+            }
+
+            &__burger{
+                margin-left: 37px;
+            }
+        }
+    }
+}

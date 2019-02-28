@@ -1,0 +1,83 @@
+.sect7{
+    background-image: url(../images/sect7.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fcfdfd;
+
+    .paginpage{
+        padding-top: rem(190);
+    }
+
+    &__content{
+        padding-top: rem(308);
+        display: flex;
+    }
+
+    &__right{
+        width: rem(1444);
+    }
+
+    &__title{
+        padding-bottom: rem(54);
+    }
+
+    &__slider{
+        display: flex;
+        width: rem(1164);
+        height: rem(110);
+        margin: 0 auto;
+        position: relative;
+
+        .swiper-container7{
+            overflow: hidden;
+            width: 100%;
+            
+        }
+
+        .swiper-slide{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 25%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+        width: rem(38);
+        height: rem(62);
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+        outline: none;
+        top: 50%;
+        transform: translateY(-50%);
+        
+    }
+
+    .swiper-button-prev{
+        background-image: url(../images/arr.png);
+        position: absolute;
+        left: rem(-107);
+        
+        
+    }
+
+    .swiper-button-next{
+        background-image: url(../images/arr.png);
+        position: absolute;
+        top: 20%;
+        right: rem(-120);
+        transform: rotate(180deg);
+
+    }
+
+    // .btn_next{
+    //     position: absolute;
+    //     right: 0;
+    //     top: 50%;
+    // }
+
+}

@@ -1,0 +1,109 @@
+.sect1{
+    background-image: url(../images/sect1.png);
+    background-size: cover;
+    padding-top: rem(231);
+
+    .wrapper{
+        width: 100%;
+        padding: 0 0 0 rem(166);
+    }
+
+    .paginpage{
+        padding-top: rem(272);
+    }
+
+    &__content{
+        display: flex;
+
+    }
+
+    &__right{
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+    }
+
+    &__text{
+        width: rem(622);
+    }
+
+    &__title{
+        margin-bottom: rem(46);
+        h1{
+            color: $maintext;
+            font-size: rem(95);
+            font-weight: 700;
+            span{
+                color: $brand_color;
+            }
+        }
+    }
+
+    &__subtitle{
+        margin-bottom: rem(48);
+    }
+
+    &__desc{
+        p{
+            color: #909ea5;
+            font-size: rem(23);
+            font-weight: 400;
+        }
+    }
+
+    &__sliderblock{
+        width: rem(828);
+
+        .slider{
+            margin-bottom: rem(11);
+
+            .swiper-container-sect1{
+                overflow: hidden;
+            }
+            
+            .swiper-slide{
+                height: rem(504);
+            }
+        }
+
+        .custom_pagin{
+            display: flex;
+            justify-content: center;
+            height: rem(16);
+            position: relative;
+
+            .strng{
+                width: rem(459);
+                height: rem(3);
+                background-color: #b7b7b7; 
+                position: absolute;
+                z-index: 100;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .swiper-pagination-sect1{
+                width: rem(459);
+                height: rem(16);
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                z-index: 200;
+                
+            }
+
+            .swiper-pagination-bullet{
+                height: rem(16);
+                width: rem(16);
+                opacity: 1 !important;
+                background-color: #b7b7b7;
+                outline: none;
+                &.swiper-pagination-bullet-active{
+                    background-color: $brand_color;
+                }
+            }
+        }
+    }
+    
+}
