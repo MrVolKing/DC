@@ -100,8 +100,41 @@
                 opacity: 1 !important;
                 background-color: #b7b7b7;
                 outline: none;
+                position: relative;
+                color: $maintext;
+                font-family: montserrat;
+                font-size: rem(16);
+                font-weight: 500;
                 &.swiper-pagination-bullet-active{
                     background-color: $brand_color;
+                }
+                &:nth-child(1):before{
+                    content: "Personalize";
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: -24px;
+                }
+                &:nth-child(2):before{
+                    content: "Automate";
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: -24px;
+                }
+                &:nth-child(3):before{
+                    content: "Send";
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: -24px;
+                }
+                &:nth-child(4):before{
+                    content: "Analyze";
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: -24px;
                 }
             }
         }

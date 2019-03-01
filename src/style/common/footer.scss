@@ -21,8 +21,9 @@
     }
 
     .paginpage{
-        padding-right: rem(146);
-        padding-top: rem(230);
+        a{
+            display: none;
+        }
     }
 
 }

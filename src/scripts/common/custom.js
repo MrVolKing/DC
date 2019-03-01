@@ -156,6 +156,7 @@ $(document).ready(() => {
                 spaceBetween: 30
             }
         },
+        loop: true,
         autoplay: {
             delay: 5000,
             disableOnInteraction: false,
@@ -172,6 +173,10 @@ $(document).ready(() => {
         pagination: {
           el: '.swiper-pagination-sect1',
           clickable: true
+        },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
         }
       });
 
