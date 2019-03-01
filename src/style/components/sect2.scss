@@ -5,6 +5,7 @@
     background-position: right top rem(-404);
     background-size: contain ;
     padding-top: rem(237);
+    padding-bottom: rem(100);
 
     &__content{
         padding-right: rem(138);
@@ -65,5 +66,53 @@
 
     &__text{
         text-align: center;
+    }
+}
+
+
+@media screen and (max-width:769px){
+    .sect2{
+        background-image: url(../images/sect2_m.png);
+        padding: 167px 0 137px ;
+        background-position: right -10px top -210px;
+
+        &__content{
+            padding: 0;
+        }
+
+        &__subtitle{
+            width: 100%;
+            margin-bottom: 27px;
+        }
+
+        &__desc{
+            width: 100%;
+            margin-bottom: 29px;
+            p{
+                font-size: 15px;
+                line-height: 22px;
+            }
+        }
+
+        &__blockpercent{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .blockitem{
+        width: 50%;
+        margin-bottom: 36px;
+        &__number{
+            p{
+                font-size: 110px;
+            }
+            span{
+                font-size: 49px;
+            }
+            .plus{
+                padding-bottom: 18px;
+            }
+        }   
     }
 }

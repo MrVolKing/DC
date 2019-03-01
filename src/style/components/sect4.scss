@@ -3,6 +3,7 @@
     background-color: rgb(238, 238, 238);
     background-size: contain;
     background-repeat: no-repeat;
+    padding-bottom: rem(100);
 
     &__content{
         padding-top: rem(173);
@@ -14,11 +15,38 @@
     }
 
     .blockslider{
-        flex-direction: row-reverse;
+        &__content{
+            flex-direction: row-reverse;
+        }
 
         &__button{
             display: flex;
             justify-content: flex-end;
+        }
+    }
+}
+
+
+@media screen and (max-width:769px){
+    .sect4{
+        padding: 168px 0 85px 0;
+
+        &__content{
+            padding: 0;
+        }
+
+        &__right{
+            width: 100%;
+        }
+
+        .blockslider{
+            &__content{
+                flex-direction: column;
+            }
+    
+            &__button{
+                justify-content: center;
+            }
         }
     }
 }

@@ -3,3 +3,10 @@
     font-size: rem(28);
     font-weight: 700;
 }
+
+@media screen and (max-width:769px){
+    .subtitle{
+        font-size: 15px;
+        line-height: 22px;
+    }
+}

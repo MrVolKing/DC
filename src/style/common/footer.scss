@@ -1,5 +1,5 @@
 .footer{
-    padding: rem(169) 0 0 0;
+    padding: rem(169) 0 rem(100) 0;
     background-image: url(../images/bg_footer.png);
     background-position-y: rem(-80);
     background-position-x: rem(-80);
@@ -8,9 +8,9 @@
     background-color: #fafafc;
 
 
-    .wrapper{
-        // width: rem(1466);
-    }
+    // .wrapper{
+    //     // width: rem(1466);
+    // }
 
     &__content{
         display: flex;
@@ -50,6 +50,12 @@
             }
             &:hover{
                 text-decoration: underline;
+            }
+        }
+        &_column{
+            a{
+                font-weight: 700;
+                font-size: rem(26);
             }
         }
     }
@@ -119,46 +125,100 @@
         a:hover{
             color: $brand_color;
         }
+    }
 
+    .blocksocials{
+        display: none;
+    }
+
+    &__bottomtext{
+        padding: 0 62px;
+        text-align: center;
+        display: none;
+    }
+
+    &__itemblock{
+        display: flex;
+        justify-content: center;
+        span{
+            font-size: 10px;
+            color: #909ea5;
+            font-weight: 300;
+            &:nth-child(2){
+                margin: 0 15px;
+            }
+        }
+        &:first-child{
+            padding: 0 16px;
+        }
+       
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 @media screen and (max-width:769px){
     .footer{
-    }
-}
+        padding: 228px 0 100px 0;
+        background-image: url(../images/bg_footer_m.png);
+        background-size: cover;
+        background-position-x: right;
+        background-position-y: -440px;
 
-
-@media screen and (max-width:420px){
-    .footer{
-        padding: 20px 0 10px 0;
-
-        &__left{
-            margin-bottom: 20px;
+        .footertop{
+            display: none;
         }
 
-        &__right{
-            a{
-                margin-bottom: 10px;
+        .footerbottom{
+            flex-direction: column;
+
+            &__blockitem{
+
+                span, a{
+                    font-size: 20px;
+                    line-height: 30px;
+                    a{
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                }
+
+                &:first-child{
+                    margin-bottom: 44px;
+                }
+
+            }
+
+            .blocksocials{
+                display: block;
+                margin-top: 44px;
+                margin-bottom: 61px;
+                a{
+                    margin-left: 0;
+                    margin-right: 24px;
+                }
+            }
+
+            &__bottomtext{
+                display: block;
             }
         }
     }
 }
+
+
+// @media screen and (max-width:420px){
+//     .footer{
+//         padding: 20px 0 10px 0;
+
+//         &__left{
+//             margin-bottom: 20px;
+//         }
+
+//         &__right{
+//             a{
+//                 margin-bottom: 10px;
+//             }
+//         }
+//     }
+// }

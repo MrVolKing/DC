@@ -14,16 +14,15 @@ header{
         width: rem(1650);
     }
 
-
     .header{
         display: flex;
         justify-content: space-between;
-        padding: rem(20) 0;
+        align-items: center;
+        padding: 0;
 
         &__left, &__right{
             display: flex;
             align-items: center;
-            // width: 50%;
         }
 
         &__logo{
@@ -34,31 +33,87 @@ header{
         &__menu{
             display: flex;
         }
+        
+        &__menu_item{
+            line-height: rem(48);
+            font-size: rem(24);
+            margin-right: rem(27);
+            position: relative;
+            height: rem(67);
+            display: flex;
+            align-items: center;
+            a{
+                color: $maintext;
+                position: relative;
+                &:before{
+                    content: '';
+                    width: 0;
+                    height: rem(5);
+                    position: absolute;
+                    background: #2a3d4d;
+                    display: block;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    transition: 0.2s;
+                }
+                
+            }
+            &:hover{
+                .header__submenu{
+                    display: block;
+                }
+                a:before{
+                    width: 100%;
+                    transition: 0.2s;
+                }
+            }
+        
+        }
 
         &__submenu{
             position: absolute;
-            opacity: 0;
+            display: none;
+            padding: rem(24) rem(21) rem(17) rem(21);
+            background-color: #2f373b;
+            width: rem(255);
+            left: rem(100);
+            top: rem(53);
         }
 
-        &__menu_item{
-            line-height: rem(48);
-            font-size: rem(20);
-            margin-right: rem(30);
+        &__submenuitem{
+            border-bottom: solid rem(2) rgba(241,241,241,.2);
+            margin-bottom: rem(20);
+            font-size: rem(24);
+            line-height: rem(24);
+            padding-bottom: rem(14);
             a{
-                color: #8a9196;
-                &:hover{
-                    color: $brand_color;
+                color: $white !important;
+                &:before{
+                    display: none!important;
                 }
             }
+            &:hover{
+                a{
+                    text-decoration: underline !important;
+                    color: $brand_color !important;
+                }
+            }
+            
         }
 
         &__demo{
             .button{
-                width: rem(160) !important;
-                height: rem(67) !important;
+                width: rem(160) ;
+                height: rem(67) ;
                 box-shadow: 0 0 rem(16) rgba(77, 122, 223, 0.7);
                 border-radius: rem(34);
                 background-color: $brand_color;
+                transition: 0.1s;
+                &:active{
+                    background-color: #254fae;
+                    transition: 0.1s;
+                }
             }
             span{
                 margin-left: rem(10);
@@ -71,11 +126,8 @@ header{
         }
 
         &__burger{
-            border-radius: 50%;
-            border: 1px solid #b7bfc4;
-            width: 49px;
-            height: 49px;
-            margin-left: rem(70);
+            width: 64px;
+            height: 46px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -88,16 +140,15 @@ header{
 
 @media screen and (max-width:769px){
     header{
-        .wrapper{
-            width: 100%;
-        }
+        background-color: $white;
+        
         .header{
-            padding: 10px 0;
+
             &__logo{
                 margin-right: 0;
                 img{
-                    width: 75px;
-                    height: 70px;
+                    width: 49px;
+                    height: 49px;
                 }
             }
 
@@ -105,8 +156,19 @@ header{
                 display: none;
             }
 
+            &__demo{
+               .button{
+                    width: 137px;
+                    height: 57px;
+               }
+               span{
+                   font-size: 14px;
+                   letter-spacing: 3.4px;
+               }
+            }
+
             &__burger{
-                margin-left: 37px;
+                display: block;
             }
         }
     }

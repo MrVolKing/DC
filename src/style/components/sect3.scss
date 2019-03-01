@@ -2,6 +2,7 @@
     background-image: url(../images/sect3.png); 
     background-color: $white;
     background-size: cover;
+    padding-bottom: rem(100);
 
     &__content{
         padding-top: rem(131);
@@ -10,5 +11,23 @@
 
     &__right{
         flex: 1;
+    }
+}
+
+@media screen and (max-width:769px){
+    .sect3{
+        background-image: url(../images/sect3_m.png);
+        padding: 165px 0 125px 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top -155px right -40px;
+
+        &__content{
+            padding: 0;
+        }
+
+        &__right{
+            width: 100%;
+        }
     }
 }

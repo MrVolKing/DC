@@ -21,13 +21,15 @@
     &:active{
         color: $maintext;
         background: transparent;
+        border: rem(1) solid #2252ee;
     }
     
 }
 
 @media screen and (max-width:769px){
     .button{
-        height: 40px;
-        font-size: 14px;
+        width: 182px;
+        height: 54px;
+        font-size: 17px;
     }
 }

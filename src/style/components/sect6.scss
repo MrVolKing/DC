@@ -3,6 +3,7 @@
     // background-color: rgb(238, 238, 238);
     background-size: cover;
     background-repeat: no-repeat;
+    padding-bottom: rem(100);
 
     &__content{
         padding-top: rem(166);
@@ -14,7 +15,9 @@
     }
 
     .blockslider{
-        flex-direction: row-reverse;
+        &__content{
+            flex-direction: row-reverse;
+        }
 
         &__button{
             display: flex;
@@ -23,4 +26,28 @@
     }
 }
 
-// (style="background-image: url(./images/sect6.png); background-color: #f3f3f3;")
+
+@media screen and (max-width:769px){
+    .sect6{
+        padding: 164px 0 115px 0;
+        background-image: url(../images/sect6_m.png);
+
+        &__content{
+            padding: 0;
+        }
+
+        &__right{
+            width: 100%;
+        }
+
+        .blockslider{
+            &__content{
+                flex-direction: column;
+            }
+    
+            &__button{
+                justify-content: center;
+            }
+        }
+    }
+}
