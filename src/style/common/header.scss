@@ -61,11 +61,11 @@ header{
             }
             &:hover{
                 .header__submenu{
-                    display: block;
+                    // display: block;
                 }
                 a:before{
                     width: 100%;
-                    transition: 0.2s;
+                    transition: .2s;
                 }
             }
         
@@ -74,11 +74,24 @@ header{
         &__submenu{
             position: absolute;
             display: none;
+            // opacity: 0;
             padding: rem(24) rem(21) rem(17) rem(21);
             background-color: #2f373b;
             width: rem(255);
             left: rem(100);
             top: rem(53);
+            &:hover{
+                display: block !important;
+            }
+
+   
+        }
+
+        .submenu_activ{
+            display: block;
+        }
+        .submenu_activ2{
+            display: block;
         }
 
         &__submenuitem{

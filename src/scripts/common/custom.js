@@ -313,6 +313,36 @@ $(document).ready(() => {
     // }
 
 
+
+    // hover
+    $('.menu_item').mouseover( () => {
+        console.log('manu hover');
+        $('.header__submenu').addClass('submenu_activ');
+    });
+    
+
+    $('.menu_item').mouseout( () => {
+        console.log('manu OFhover');
+        setTimeout( () => {
+            $('.header__submenu').removeClass('submenu_activ');
+        }, 2000);
+    }); 
+
+    // $('.submenu').mouseover( () => {
+    //     console.log('sub hover');
+    //     $('.header__submenu').addClass('submenu_activ2');
+    // });
+    
+
+    // $('.submenu').mouseout( () => {
+    //     console.log('sub OFhover');
+    //     setTimeout( () => {
+    //         $('.header__submenu').removeClass('submenu_activ2');
+    //     }, 3000);
+    // }); 
+
+    
+
 });
 
                                                                         

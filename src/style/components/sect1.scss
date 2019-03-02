@@ -22,6 +22,7 @@
         display: flex;
         justify-content: space-between;
         flex: 1;
+        padding-right: rem(53);
     }
 
     &__text{
@@ -48,22 +49,27 @@
         p{
             color: #909ea5;
             font-size: rem(18);
+            line-height: rem(28);
             font-weight: 400;
         }
     }
 
     &__sliderblock{
-        width: rem(828);
+        // width: rem(828);
+        width: rem(774);
+        padding-top: rem(42);
 
         .slider{
-            margin-bottom: rem(11);
+            margin-bottom: rem(51);
 
             .swiper-container-sect1{
                 overflow: hidden;
             }
             
             .swiper-slide{
-                height: rem(504);
+                // height: rem(504);
+                height: rem(425);
+                background-size: cover;
             }
         }
 
@@ -151,6 +157,10 @@
 
         .wrapper{
             padding: 0 20px;
+        }
+
+        &__right{
+            padding-right: 0;
         }
 
         &__sliderblock{
