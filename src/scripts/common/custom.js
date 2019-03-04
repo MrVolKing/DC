@@ -316,13 +316,14 @@ $(document).ready(() => {
 
     // hover
     $('.menu_item').mouseover( () => {
-        console.log('manu hover');
+        // console.log('menu hover');
         $('.header__submenu').addClass('submenu_activ');
+        
     });
     
 
     $('.menu_item').mouseout( () => {
-        console.log('manu OFhover');
+        // console.log('menu OFhover');
         setTimeout( () => {
             $('.header__submenu').removeClass('submenu_activ');
         }, 2000);

@@ -36,7 +36,7 @@ header{
         
         &__menu_item{
             line-height: rem(48);
-            font-size: rem(24);
+            font-size: rem(18);
             margin-right: rem(27);
             position: relative;
             height: rem(67);
@@ -60,25 +60,27 @@ header{
                 
             }
             &:hover{
-                .header__submenu{
-                    // display: block;
-                }
+                
                 a:before{
                     width: 100%;
                     transition: .2s;
                 }
             }
+
+            // .bf_act{
+            //     width: 100%;
+            //     transition: .2s;
+            // }
         
         }
 
         &__submenu{
             position: absolute;
             display: none;
-            // opacity: 0;
             padding: rem(24) rem(21) rem(17) rem(21);
             background-color: #2f373b;
             width: rem(255);
-            left: rem(100);
+            left: rem(83);
             top: rem(53);
             &:hover{
                 display: block !important;
@@ -90,14 +92,12 @@ header{
         .submenu_activ{
             display: block;
         }
-        .submenu_activ2{
-            display: block;
-        }
+        
 
         &__submenuitem{
             border-bottom: solid rem(2) rgba(241,241,241,.2);
             margin-bottom: rem(20);
-            font-size: rem(24);
+            font-size: rem(18);
             line-height: rem(24);
             padding-bottom: rem(14);
             a{
